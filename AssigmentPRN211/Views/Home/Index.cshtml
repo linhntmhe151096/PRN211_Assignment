@@ -1,0 +1,88 @@
+﻿@model List<Movie>
+@using AssigmentPRN211.Logic
+@using Microsoft.AspNetCore.Http
+@*@using Newtonsoft.Json*@
+@using System.Text.Json
+@{
+    Person p = Context.Session.GetString("User") != null ?
+           JsonSerializer.Deserialize<Person>(Context.Session.GetString("User")) : null;
+    int idPerson = p == null ? -1 : p.PersonId;
+}
+
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
+
+
+
+<br>
+
+
+<!-- Page content-->
+<div class="container-fluid row">
+    <div class="col-md-3">
+        <h1>Thể Loại</h1>
+
+        <ul class="text">
+            @foreach (Genre item in ViewBag.Genres)
+            {
+                <li><a href="/Home/Filter?genre_id=@item.GenreId">@item.Description</a></li>
+            }
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <div class="row">
+            @foreach (var movie in ViewBag.listmovie)
+            {
+                <div class="col-md-3 my-3 " style="text-align: center;">
+                    <a href="/Movie/Detail?id=@movie.MovieId"><img class="imgg" src="@movie.Image"></a>
+                    <div class="cont">
+                        <div class="contentt">
+                            <h3><a href="/Movie/Detail?id=@movie.MovieId">@movie.Title</a></h3>
+                            Năm: @movie.Year<br>
+                            Loại: @movie.Genre.Description<br>
+                             Điểm:
+                            @if(@ViewBag.rate is not null)
+                            {
+                                 @Rates.Ratee(@movie.MovieId)
+
+                            }else{
+                               <span>aaaaa</span>
+                            }
+                           
+
+                           
+
+
+
+
+
+                        </div>
+                        @if (p == null)
+                        {
+                            <a href="/Login/Login" type="button" class="btn btn-primary" style="margin-top: 10px;">Đánh giá</a><br><br>
+                        }
+                        else{
+                            <a href="/Movie/Detail?id=@movie.MovieId" type="button" class="btn btn-primary" style="margin-top: 10px;">Đánh giá</a><br><br>
+                            
+                            }
+                            
+
+                    </div>
+                </div>
+            }
+
+
+
+
+
+
+            <!-- them cac bo phim vao day -->
+
+        </div>
+    </div>
+</div>
+<br>
+<br>

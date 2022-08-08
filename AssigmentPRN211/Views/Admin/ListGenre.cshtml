@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "ListGenre";
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<div class="main-container">
+		<div class="pd-ltr-20">
+
+            <div class="card-box mb-30">
+				<h2 class="h4 pd-20">List of Genre</h2>
+				<a class="pd-20" href="/Genres/Create"> Add new Genre</a>
+				<table class="table nowrap">
+					<thead>
+						<tr>
+							
+							<th>Genre Name</th>
+							
+							
+							<th class="datatable-nosort">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (Genre g in ViewBag.genres)
+					   {
+						   <tr>
+							
+							<td>
+								<h6 class="font-16">@g.Description</h6>
+							
+							</td>
+							
+							<td>
+								<div class="dropdown">
+									<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+										<i class="dw dw-more"></i>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+										
+										<a class="dropdown-item" href="/Genres/Edit/@g.GenreId"><i class="dw dw-edit2"></i> Edit</a>
+										<a class="dropdown-item" asp-action="DeleteGenre" asp-route-ID="@g.GenreId" onclick = "return confirm('Are you sure you wish to remove this genre?');"><i class="dw dw-delete-3"></i> Delete</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					   }
+						
+					
+					</tbody>
+				</table>
+			</div>
+
+
+
+        </div>
+</div>
+

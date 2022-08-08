@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@model AssigmentPRN211.Models.Movie
+@using AssigmentPRN211.Logic
+@using Microsoft.AspNetCore.Http
+@*@using Newtonsoft.Json*@
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Person p = Context.Session.GetString("User") != null ?
+          JsonSerializer.Deserialize<Person>(Context.Session.GetString("User")) : null;
+    int idPerson = p == null ? -1 : p.PersonId;
+}
+<link href="~/css/detail.css" rel="stylesheet" />
+
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-4" style="text-align: center;">
+            <img class="img2" src="@Html.DisplayFor(model=>model.Image)">
+        </div>
+        <div class="col-md-8">
+            <h1>@Html.DisplayFor(model => model.Title)</h1>
+            <div style="margin-right: 20px;">
+                <b>Thể loại: </b>@Html.DisplayFor(model => model.Genre.Description) <br>
+                <b>Điểm đánh giá: </b>@Rates.Ratee(Model.MovieId) <br>
+                <b>Mô tả:</b> @Html.DisplayFor(model => model.Description)
+            </div>
+            @if (p is null || @p.IsActive == false)
+            {
+                <a href="/Login/Login" type="button" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 20px;">Đánh giá</a>
+            }
+            else
+            {
+                <hr />
+                @if (@Rates.countComment(@p.PersonId, Model.MovieId) == 0)
+                {
+                    <form action="addComment" method="post">
+
+                        <h3>Chi tiết đánh giá: </h3>
+
+                        <div class="row">
+                            <input type="text" name="comments.PersonId" value=@p.PersonId hidden>
+                            <input type="text" name="comments.MovieId" value=@Html.DisplayFor(model => model.MovieId) hidden>
+                            <div class="col-md-2">
+                                <label for="exampleFormControlInput1" class="form-label">Điểm đánh giá: </label>
+                            </div>
+                            <div class="col-md-4">
+                                <input name="comments.NumericRating" type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div>
+                                Bình Luận:
+                                <textarea name="comments.Comment" class="form-control" id="exampleFormControlTextarea1" style="margin-top: 10px;" rows="6"></textarea>
+                                <button type="submit" class="btn btn-primary my-1">Đánh Giá</button>
+                            </div>
+                        </div>
+                    </form>
+                }else
+                {
+                    <form action="updateComment" method="post">
+
+                        <h3>Chi tiết đánh giá: </h3>
+                        <input type="text" name="newrates.PersonId" value=@p.PersonId hidden>
+                            <input type="text" name="newrates.MovieId" value=@Html.DisplayFor(model => model.MovieId) hidden>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label  for="exampleFormControlInput1" class="form-label">Điểm đánh giá: </label>
+                            </div>
+                            <div class="col-md-4">
+                                <input name="newrates.NumericRating" value="@ViewBag.Rateee.NumericRating" type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div>
+                                Bình Luận:
+                                <textarea type="text" name="newrates.Comment"  class="form-control" id="exampleFormControlTextarea1" style="margin-top: 10px;" rows="6">@ViewBag.Rateee.Comment</textarea>
+                                <button type="submit" class="btn btn-primary my-1">Đánh Giá</button>
+                            </div>
+                        </div>
+                    </form>
+                }
+               
+
+            }
+
+            <br />
+            <hr>
+            <div>
+                <h3>Bình luận: </h3>
+                <div class="">
+                    @foreach (Rate com in ViewBag.Comment)
+                    {
+                        if(com.MovieId == Model.MovieId)
+                        {
+                            
+                                <b>@com.Person.Fullname:  </b>@com.Comment<br />
+                           
+                        }
+
+                    }
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br />
+<br />
+
+

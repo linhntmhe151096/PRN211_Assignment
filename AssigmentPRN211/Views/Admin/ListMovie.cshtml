@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "ListMovie";
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<div class="main-container">
+		<div class="pd-ltr-20">
+
+            <div class="card-box mb-30">
+				<h2 class="h4 pd-20">List of Movie</h2>
+				<a class="pd-20" href="/Movies/Create"> Add new Movie</a>
+				<table class="table nowrap">
+					<thead>
+						<tr>
+							<th class="table-plus datatable-nosort">Movie</th>
+							<th>Name</th>
+							<th>Year</th>
+							<th>Description</th>
+							
+							<th class="datatable-nosort">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (Movie m in ViewBag.listmovie)
+					   {
+						   <tr>
+							<td class="table-plus">
+								<img src="@m.Image" width="70" height="70" alt="">
+							</td>
+							<td>
+								<h5 class="font-16">@m.Title</h5>
+							
+							</td>
+							<td>@m.Year</td>
+							<td>@m.Description</td>
+							
+							<td>
+								<div class="dropdown">
+									<a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+										<i class="dw dw-more"></i>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+										
+										<a class="dropdown-item" href="/Movies/Edit/@m.MovieId"><i class="dw dw-edit2"></i> Edit</a>
+										<a class="dropdown-item" asp-action="DeleteMovie" asp-route-ID="@m.MovieId" onclick = "return confirm('Are you sure you wish to remove this movie?');"><i class="dw dw-delete-3"></i> Delete</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					   }
+						
+					
+					</tbody>
+				</table>
+			</div>
+
+
+
+        </div>
+</div>
+

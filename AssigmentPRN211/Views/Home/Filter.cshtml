@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Filter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Movie>
+<style>
+    a{
+        text-decoration:none;
+    }
+</style>
+
+ <br>
+
+
+    <!-- Page content-->
+    <div class="container-fluid row">
+        <div class="col-md-3">
+            <h1>Thể Loại</h1>
+           
+            <ul class="text">
+           @foreach (Genre listgen in ViewBag.Genre)
+           {
+               <li><a href="/Home/Filter?genre_id=@listgen.GenreId">@listgen.Description</a></li>
+           }     
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                @foreach (Movie movie in ViewBag.listmovie)
+               {
+                   <div class="col-md-3 my-3 " style="text-align: center;">
+                    <a href="/Movie/Detail?id=@movie.MovieId"><img class="imgg" src="@movie.Image"></a>
+                    <div class="cont">
+                        <div class="contentt">
+                            <h3><a href="/Movie/Detail?id=@movie.MovieId">@movie.Title</a></h3>
+                            Năm: @movie.Year<br>
+                            Loại: @movie.Genre.Description<br>
+                            Điểm: 7.03<br>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="margin-top: 10px;">Đánh giá</button><br><br>
+                    </div>
+                </div>
+               }
+                
+             
+          
+               
+           
+
+                <!-- them cac bo phim vao day -->
+                
+            </div>
+        </div>
+     </div>
+    <br><br><br />
+
+    <br /><br /><br />

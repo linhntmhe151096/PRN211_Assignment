@@ -1,0 +1,96 @@
+﻿
+@model AssigmentPRN211.Models.Movie
+
+@{
+    ViewData["Title"] = "EditMovie";
+    Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+}
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="title">
+                            <h4>Update Movie</h4>
+                        </div>
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/Admin/Index">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Movie</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                January 2018
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Export List</a>
+                                <a class="dropdown-item" href="#">Policies</a>
+                                <a class="dropdown-item" href="#">View Assets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Default Basic Forms Start -->
+            <div class="pd-20 card-box mb-30">
+                
+                <form asp-action="EditMovie">
+                    <input value="@ViewBag.movie.MovieId"  type="text" hidden />
+                    <input value="@ViewBag.movie.GenreId" type="text" />
+                
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-md-2 col-form-label">Title</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input class="form-control" name="newMovie.Title" value="@ViewBag.movie.Title" type="text" placeholder="Johnny Brown">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-md-2 col-form-label">Year</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input class="form-control" name="newMovie.Year" value="@ViewBag.movie.Year" placeholder="Search Here" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-md-2 col-form-label">Image</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input class="form-control" name="newMovie.Image" value="@ViewBag.movie.Image" type="text">
+                        </div>
+                    </div>
+                  
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-md-2 col-form-label">Description</label>
+                        <div class="col-sm-12 col-md-10">
+                            
+                        <textarea name="newMovie.Description" cols="58" class="form-control" rows="8">@ViewBag.movie.Description</textarea>
+           
+                            
+                        </div>
+                    </div>
+                   
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-md-2 col-form-label">Select</label>
+                        <div class="col-sm-12 col-md-10">
+                            <select class="custom-select col-12">
+                                <option selected="">Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Update</button>
+                </form>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

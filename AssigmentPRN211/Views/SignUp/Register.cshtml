@@ -1,0 +1,61 @@
+﻿@model AssigmentPRN211.Models.PersonSignUp
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/signup.css" rel="stylesheet" />
+    <!-- Page content-->
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" style="border: 1px solid rgb(146 196 201 / 65%); background-color: rgb(146 196 201 / 65%); border-radius: 10px;">
+                    <div class="row bodi">
+                        @using (Html.BeginForm("Register", "SignUp", FormMethod.Post, new { @class = "signup_form" }))
+                        {
+                                    @Html.AntiForgeryToken()
+                        <div>
+                            <h2>ĐĂNG KÝ TÀI KHOẢN</h2><br>
+                        </div>
+                        <div>
+                            <div class="mb-3">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                                <input asp-for="Email" type="email" class="form-control formm" id="exampleFormControlInput1" placeholder="Email address*">
+                                 <span asp-validation-for="Email" class="text-danger" id="existEmail">@ViewBag.error</span>
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                                
+                                <input asp-for="Password" type="password" class="form-control formm" id="exampleFormControlInput1" placeholder="Password*">
+                                <span asp-validation-for="Password" class="text-danger" ></span>
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                                
+                                <input asp-for="FullName" type="text" class="form-control formm" id="exampleFormControlInput1" placeholder="Full Name*">
+                                <span asp-validation-for="FullName" class="text-danger" ></span>
+                            </div>
+                        </div>
+                        <div style="text-align: left;">
+                            Giới tính: 
+                            <input name="gender" type="radio" value="Nam" checked/>Nam
+                            <input name="gender" type="radio" value="Nữ"/>Nữ
+                        </div><br>
+                        <div class="text" style="color: #727272; text-align: left; font-weight: 600;">
+                            Nếu tài khoản đã tồn tại: <a href="/Login/Login">Đăng nhập</a>
+                        </div>
+                        <div style="margin-top: 10px; text-align: left;">
+                            <button type="submit" class="btn btn-primary">Đăng ký</button><br>
+                        </div><br>
+                        <hr><br><br><br>
+                        }
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div><br><br>
+

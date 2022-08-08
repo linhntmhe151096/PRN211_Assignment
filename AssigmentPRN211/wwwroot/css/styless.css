@@ -1,0 +1,23 @@
+.text a {
+  text-decoration: none
+}
+
+.imgg{
+  width: 100%;
+  height: 210px;
+  border-radius: 8px 8px 0px 0px;
+}
+.contentt{
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.cont{
+  border: 2px solid rgba(207, 207, 207, 1);
+  border-radius: 0px 0px 8px 8px;
+}
+.footer{
+    position: relative;
+    bottom:0;
+
+}

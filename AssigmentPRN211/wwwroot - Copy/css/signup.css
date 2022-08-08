@@ -1,0 +1,46 @@
+.bodi{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buton-xanh{
+    width: 300px;
+    text-align: left;
+    background-color: #3989ff;
+    border: #3989ff;
+    margin-right: 20px;
+}
+.buton-do{
+    width: 300px;
+    text-align: left;
+    margin-left: 20px;
+}
+.formm{
+    height: 45px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    font-family: 'Times New Roman', Times, serif;
+}
+.checkbox{
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 420px;
+}
+h4{
+    margin-top: 20px;
+    font-weight: 700;
+}
+.aaa{
+    color: red;
+    margin-left: 365px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.text a {
+    text-decoration: none
+  }

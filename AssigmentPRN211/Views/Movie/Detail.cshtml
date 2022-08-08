@@ -1,0 +1,64 @@
+﻿@model AssigmentPRN211.Models.Movie
+@using AssigmentPRN211.Logic
+@using Microsoft.AspNetCore.Http
+@*@using Newtonsoft.Json*@
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Person p = Context.Session.GetString("User") != null ?
+          JsonSerializer.Deserialize<Person>(Context.Session.GetString("User")) : null;
+    int idPerson = p == null ? -1 : p.PersonId;
+}
+<link href="~/css/detail.css" rel="stylesheet" />
+
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-4" style="text-align: center;">
+            <img class="img2" src="@Html.DisplayFor(model=>model.Image)">
+        </div>
+        <div class="col-md-8">
+            <h1>@Html.DisplayFor(model => model.Title)</h1>
+            <div style="margin-right: 20px;">
+                <b>Thể loại: </b>@Html.DisplayFor(model => model.Genre.Description) <br>
+                <b>Điểm đánh giá: </b>@Rates.Ratee(Model.MovieId) <br>
+                <b>Mô tả:</b> @Html.DisplayFor(model => model.Description)
+            </div>
+            @if (p is null || @p.IsActive == false)
+            {
+                <a href="/Login/Login" type="button" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 20px;">Đánh giá</a>
+            }
+            else
+            {
+                <a href="/Movie/Comment?id=@Model.MovieId" type="button" class="btn btn-primary" style="margin-top: 10px; margin-bottom: 20px;">Đánh giá</a>
+
+            }
+
+            <br />
+            <hr>
+            <div>
+                <h3>Bình luận: </h3>
+                <div class="">
+                    @foreach (Rate com in ViewBag.Comment)
+                    {
+                        if(com.MovieId == Model.MovieId)
+                        {
+                            
+                                <b>@com.Person.Fullname:  </b>@com.Comment<br />
+                           
+                        }
+
+                    }
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br />
+<br />
+

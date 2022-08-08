@@ -1,0 +1,2212 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot - Copy\css\core.css" />
+    <None Remove="wwwroot - Copy\css\core.min.css" />
+    <None Remove="wwwroot - Copy\css\detail.css" />
+    <None Remove="wwwroot - Copy\css\fonts\dropways.css" />
+    <None Remove="wwwroot - Copy\css\fonts\dropways.eot" />
+    <None Remove="wwwroot - Copy\css\fonts\dropways.svg" />
+    <None Remove="wwwroot - Copy\css\fonts\dropways.ttf" />
+    <None Remove="wwwroot - Copy\css\fonts\dropways.woff" />
+    <None Remove="wwwroot - Copy\css\fonts\font-awesome\css\font-awesome.css" />
+    <None Remove="wwwroot - Copy\css\fonts\font-awesome\css\font-awesome.min.css" />
+    <None Remove="wwwroot - Copy\css\fonts\fontawesome-webfont.eot" />
+    <None Remove="wwwroot - Copy\css\fonts\fontawesome-webfont.svg" />
+    <None Remove="wwwroot - Copy\css\fonts\fontawesome-webfont.ttf" />
+    <None Remove="wwwroot - Copy\css\fonts\fontawesome-webfont.woff" />
+    <None Remove="wwwroot - Copy\css\fonts\fontawesome-webfont.woff2" />
+    <None Remove="wwwroot - Copy\css\fonts\FontAwesome.otf" />
+    <None Remove="wwwroot - Copy\css\fonts\foundation-icons.css" />
+    <None Remove="wwwroot - Copy\css\fonts\foundation-icons.eot" />
+    <None Remove="wwwroot - Copy\css\fonts\foundation-icons.svg" />
+    <None Remove="wwwroot - Copy\css\fonts\foundation-icons.ttf" />
+    <None Remove="wwwroot - Copy\css\fonts\foundation-icons.woff" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons-master\css\ionicons.css" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons-master\css\ionicons.min.css" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons.eot" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons.svg" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons.ttf" />
+    <None Remove="wwwroot - Copy\css\fonts\ionicons.woff" />
+    <None Remove="wwwroot - Copy\css\fonts\themify-icons\themify-icons.css" />
+    <None Remove="wwwroot - Copy\css\fonts\themify.eot" />
+    <None Remove="wwwroot - Copy\css\fonts\themify.svg" />
+    <None Remove="wwwroot - Copy\css\fonts\themify.ttf" />
+    <None Remove="wwwroot - Copy\css\fonts\themify.woff" />
+    <None Remove="wwwroot - Copy\css\icon-font.min.css" />
+    <None Remove="wwwroot - Copy\css\login.css" />
+    <None Remove="wwwroot - Copy\css\signup.css" />
+    <None Remove="wwwroot - Copy\css\site.css" />
+    <None Remove="wwwroot - Copy\css\style.css" />
+    <None Remove="wwwroot - Copy\css\style.min.css" />
+    <None Remove="wwwroot - Copy\css\styless.css" />
+    <None Remove="wwwroot - Copy\favicon.ico" />
+    <None Remove="wwwroot - Copy\js\advanced-components.js" />
+    <None Remove="wwwroot - Copy\js\apexcharts-setting.js" />
+    <None Remove="wwwroot - Copy\js\calendar-setting.js" />
+    <None Remove="wwwroot - Copy\js\colorpicker.js" />
+    <None Remove="wwwroot - Copy\js\core.js" />
+    <None Remove="wwwroot - Copy\js\core.min.js" />
+    <None Remove="wwwroot - Copy\js\dashboard.js" />
+    <None Remove="wwwroot - Copy\js\dashboard2.js" />
+    <None Remove="wwwroot - Copy\js\datatable-setting.js" />
+    <None Remove="wwwroot - Copy\js\highchart-setting.js" />
+    <None Remove="wwwroot - Copy\js\jvectormap-setting.js" />
+    <None Remove="wwwroot - Copy\js\knob-chart-setting.js" />
+    <None Remove="wwwroot - Copy\js\layout-settings.js" />
+    <None Remove="wwwroot - Copy\js\process.js" />
+    <None Remove="wwwroot - Copy\js\range-slider-setting.js" />
+    <None Remove="wwwroot - Copy\js\script.js" />
+    <None Remove="wwwroot - Copy\js\script.min.js" />
+    <None Remove="wwwroot - Copy\js\site.js" />
+    <None Remove="wwwroot - Copy\js\steps-setting.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Remove="wwwroot - Copy\lib\bootstrap\LICENSE" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery-validation\LICENSE.md" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.js" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.min.js" />
+    <None Remove="wwwroot - Copy\lib\jquery\dist\jquery.min.map" />
+    <None Remove="wwwroot - Copy\lib\jquery\LICENSE.txt" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\css\datepicker.css" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\css\datepicker.min.css" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\datepicker.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\datepicker.min.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.cs.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.da.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.de.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.en.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.es.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.fi.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.fr.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.hu.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.nl.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pl.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pt-BR.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pt.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.ro.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.sk.js" />
+    <None Remove="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.zh.js" />
+    <None Remove="wwwroot - Copy\plugins\apexcharts\apexcharts.css" />
+    <None Remove="wwwroot - Copy\plugins\apexcharts\apexcharts.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.min.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.css.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.min.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.min.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.js.map" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\.jshintrc" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\bootstrap-select.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ar_AR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-bg_BG.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-cro_CRO.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-cs_CZ.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-da_DK.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-de_DE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-en_US.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-es_CL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-es_ES.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-et_EE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-eu.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fa_IR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fi_FI.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fr_FR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-hu_HU.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-id_ID.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-it_IT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ja_JP.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-kh_KM.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ko_KR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-lt_LT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-nb_NO.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-nl_NL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pl_PL.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pt_BR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pt_PT.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ro_RO.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ru_RU.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sk_SK.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sl_SI.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sv_SE.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-tr_TR.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ua_UA.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-vi_VN.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-zh_CN.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-zh_TW.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-select\test.html" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-tagsinput\bootstrap-tagsinput.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-wysihtml5-master\bootstrap-wysihtml5.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap-wysihtml5-master\bootstrap-wysihtml5.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap\bootstrap.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap\bootstrap.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap\bootstrap.min.css" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap\bootstrap.min.js" />
+    <None Remove="wwwroot - Copy\plugins\bootstrap\popper.min.js" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper-init.js" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.common.js" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.css" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.esm.js" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.js" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.min.css" />
+    <None Remove="wwwroot - Copy\plugins\cropperjs\dist\cropper.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\css\dataTables.bootstrap4.min.css" />
+    <None Remove="wwwroot - Copy\plugins\datatables\css\jquery.dataTables.min.css" />
+    <None Remove="wwwroot - Copy\plugins\datatables\css\responsive.bootstrap4.min.css" />
+    <None Remove="wwwroot - Copy\plugins\datatables\css\responsive.dataTables.min.css" />
+    <None Remove="wwwroot - Copy\plugins\datatables\images\sort_asc.png" />
+    <None Remove="wwwroot - Copy\plugins\datatables\images\sort_asc_disabled.png" />
+    <None Remove="wwwroot - Copy\plugins\datatables\images\sort_both.png" />
+    <None Remove="wwwroot - Copy\plugins\datatables\images\sort_desc.png" />
+    <None Remove="wwwroot - Copy\plugins\datatables\images\sort_desc_disabled.png" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\buttons.bootstrap4.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\buttons.flash.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\buttons.html5.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\buttons.print.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\dataTables.bootstrap4.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\dataTables.buttons.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\dataTables.responsive.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\jquery.dataTables.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\jszip.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\pdfmake.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\responsive.bootstrap4.min.js" />
+    <None Remove="wwwroot - Copy\plugins\datatables\js\vfs_fonts.js" />
+    <None Remove="wwwroot - Copy\plugins\dropzone\src\basic.scss" />
+    <None Remove="wwwroot - Copy\plugins\dropzone\src\dropzone.css" />
+    <None Remove="wwwroot - Copy\plugins\dropzone\src\dropzone.js" />
+    <None Remove="wwwroot - Copy\plugins\dropzone\src\dropzone.scss" />
+    <None Remove="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.css" />
+    <None Remove="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.js" />
+    <None Remove="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.min.css" />
+    <None Remove="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.min.js" />
+    <None Remove="wwwroot - Copy\plugins\fullcalendar\fullcalendar.css" />
+    <None Remove="wwwroot - Copy\plugins\fullcalendar\fullcalendar.min.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.js.map" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.src.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.js.map" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.src.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.js" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.js.map" />
+    <None Remove="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.src.js" />
+    <None Remove="wwwroot - Copy\plugins\highlight.js\src\highlight.js" />
+    <None Remove="wwwroot - Copy\plugins\highlight.js\src\highlight.pack.js" />
+    <None Remove="wwwroot - Copy\plugins\highlight.js\src\styles\solarized-dark.css" />
+    <None Remove="wwwroot - Copy\plugins\ion-rangeslider\css\ion.rangeSlider.css" />
+    <None Remove="wwwroot - Copy\plugins\ion-rangeslider\js\ion.rangeSlider.min.js" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\dist\css\asColorPicker.css" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\alpha.png" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\hue.png" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\saturation.png" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\transparent.png" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColorPicker\jquery-asColorPicker.js" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asColor\dist\jquery-asColor.js" />
+    <None Remove="wwwroot - Copy\plugins\jquery-asGradient\dist\jquery-asGradient.js" />
+    <None Remove="wwwroot - Copy\plugins\jQuery-Knob-master\jquery.knob.min.js" />
+    <None Remove="wwwroot - Copy\plugins\jquery-steps\jquery.steps.css" />
+    <None Remove="wwwroot - Copy\plugins\jquery-steps\jquery.steps.js" />
+    <None Remove="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-2.0.3.css" />
+    <None Remove="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-2.0.3.min.js" />
+    <None Remove="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <None Remove="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap.css" />
+    <None Remove="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap.js" />
+    <None Remove="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.concat.min.js" />
+    <None Remove="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.css" />
+    <None Remove="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.js" />
+    <None Remove="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.min.css" />
+    <None Remove="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mousewheel.min.js" />
+    <None Remove="wwwroot - Copy\plugins\plyr\dist\plyr.css" />
+    <None Remove="wwwroot - Copy\plugins\plyr\dist\plyr.js" />
+    <None Remove="wwwroot - Copy\plugins\plyr\dist\plyr.svg" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\css\select2.css" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\css\select2.min.css" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\af.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ar.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\az.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\bg.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\bs.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ca.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\cs.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\da.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\de.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\dsb.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\el.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\en.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\es.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\et.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\eu.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\fa.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\fi.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\fr.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\gl.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\he.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\hi.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\hr.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\hsb.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\hu.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\hy.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\id.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\is.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\it.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ja.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\km.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ko.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\lt.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\lv.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\mk.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ms.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\nb.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\nl.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\pl.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ps.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\pt-BR.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\pt.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ro.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\ru.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\sk.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\sl.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\sr-Cyrl.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\sr.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\sv.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\th.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\tk.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\tr.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\uk.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\vi.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\zh-CN.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\i18n\zh-TW.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\select2.full.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\select2.full.min.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\select2.js" />
+    <None Remove="wwwroot - Copy\plugins\select2\dist\js\select2.min.js" />
+    <None Remove="wwwroot - Copy\plugins\slick\slick.css" />
+    <None Remove="wwwroot - Copy\plugins\slick\slick.min.js" />
+    <None Remove="wwwroot - Copy\plugins\sweetalert2\sweet-alert.init.js" />
+    <None Remove="wwwroot - Copy\plugins\sweetalert2\sweetalert2.all.js" />
+    <None Remove="wwwroot - Copy\plugins\sweetalert2\sweetalert2.css" />
+    <None Remove="wwwroot - Copy\plugins\switchery\switchery.min.css" />
+    <None Remove="wwwroot - Copy\plugins\switchery\switchery.min.js" />
+    <None Remove="wwwroot - Copy\plugins\timedropper\timedropper.css" />
+    <None Remove="wwwroot - Copy\plugins\timedropper\timedropper.js" />
+    <None Remove="wwwroot - Copy\plugins\timedropper\timedropper.min.css" />
+    <None Remove="wwwroot - Copy\plugins\timedropper\timedropper.min.js" />
+    <None Remove="wwwroot - Copy\plugins\wysihtml5-master\dist\wysihtml5-0.3.0.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot - Copy\css\core.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\core.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\detail.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\dropways.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\dropways.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\dropways.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\dropways.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\dropways.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\font-awesome\css\font-awesome.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\font-awesome\css\font-awesome.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\fontawesome-webfont.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\fontawesome-webfont.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\fontawesome-webfont.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\fontawesome-webfont.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\fontawesome-webfont.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\FontAwesome.otf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\foundation-icons.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\foundation-icons.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\foundation-icons.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\foundation-icons.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\foundation-icons.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons-master\css\ionicons.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons-master\css\ionicons.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\ionicons.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\themify-icons\themify-icons.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\themify.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\themify.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\themify.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\fonts\themify.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\icon-font.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\login.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\signup.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\site.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\style.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\css\styless.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\advanced-components.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\apexcharts-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\calendar-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\colorpicker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\core.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\core.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\dashboard.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\dashboard2.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\datatable-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\highchart-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\jvectormap-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\knob-chart-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\layout-settings.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\process.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\range-slider-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\script.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\script.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\site.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\js\steps-setting.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-grid.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\css\bootstrap.min.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\dist\js\bootstrap.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\bootstrap\LICENSE">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\additional-methods.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\dist\jquery.validate.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery-validation\LICENSE.md">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\dist\jquery.min.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\css\datepicker.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\css\datepicker.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\datepicker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\datepicker.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.cs.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.da.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.de.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.en.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.es.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.fi.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.fr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.hu.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.nl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pt-BR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.pt.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.ro.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.sk.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\air-datepicker\dist\js\i18n\datepicker.zh.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\apexcharts\apexcharts.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\apexcharts\apexcharts.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\bootstrap-select.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.css.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\css\bootstrap-select.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\bootstrap-select.min.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-am_ET.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ar_AR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-bg_BG.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-cs_CZ.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-da_DK.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-de_DE.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-en_US.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_CL.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-es_ES.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-et_EE.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-eu.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fa_IR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fi_FI.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-fr_FR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hr_HR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-hu_HU.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-id_ID.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-it_IT.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ja_JP.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-kh_KM.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ko_KR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lt_LT.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-lv_LV.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nb_NO.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-nl_NL.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pl_PL.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_BR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-pt_PT.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ro_RO.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ru_RU.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sk_SK.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sl_SI.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-sv_SE.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-tr_TR.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-ua_UA.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-vi_VN.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_CN.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\dist\js\i18n\defaults-zh_TW.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\.jshintrc">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\bootstrap-select.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ar_AR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-bg_BG.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-cro_CRO.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-cs_CZ.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-da_DK.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-de_DE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-en_US.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-es_CL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-es_ES.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-et_EE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-eu.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fa_IR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fi_FI.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-fr_FR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-hu_HU.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-id_ID.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-it_IT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ja_JP.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-kh_KM.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ko_KR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-lt_LT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-nb_NO.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-nl_NL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pl_PL.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pt_BR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-pt_PT.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ro_RO.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ru_RU.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sk_SK.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sl_SI.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-sv_SE.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-tr_TR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-ua_UA.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-vi_VN.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-zh_CN.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\js\i18n\defaults-zh_TW.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-select\test.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-tagsinput\bootstrap-tagsinput.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-tagsinput\bootstrap-tagsinput.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-wysihtml5-master\bootstrap-wysihtml5.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap-wysihtml5-master\bootstrap-wysihtml5.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap\bootstrap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap\bootstrap.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\bootstrap\popper.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper-init.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.common.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.esm.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\cropperjs\dist\cropper.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\css\dataTables.bootstrap4.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\css\jquery.dataTables.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\css\responsive.bootstrap4.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\css\responsive.dataTables.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\images\sort_asc.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\images\sort_asc_disabled.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\images\sort_both.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\images\sort_desc.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\images\sort_desc_disabled.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\buttons.bootstrap4.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\buttons.flash.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\buttons.html5.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\buttons.print.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\dataTables.bootstrap4.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\dataTables.buttons.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\dataTables.responsive.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\jquery.dataTables.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\jszip.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\pdfmake.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\responsive.bootstrap4.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\datatables\js\vfs_fonts.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\dropzone\src\basic.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\dropzone\src\dropzone.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\dropzone\src\dropzone.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\dropzone\src\dropzone.scss">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fancybox\dist\jquery.fancybox.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fullcalendar\fullcalendar.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\fullcalendar\fullcalendar.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-3d.src.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts-more.src.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.js.map">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highcharts-6.0.7\code\highcharts.src.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highlight.js\src\highlight.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highlight.js\src\highlight.pack.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\highlight.js\src\styles\solarized-dark.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\ion-rangeslider\css\ion.rangeSlider.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\ion-rangeslider\js\ion.rangeSlider.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\dist\css\asColorPicker.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\alpha.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\hue.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\saturation.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\dist\images\transparent.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColorPicker\jquery-asColorPicker.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asColor\dist\jquery-asColor.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-asGradient\dist\jquery-asGradient.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jQuery-Knob-master\jquery.knob.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-steps\jquery.steps.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jquery-steps\jquery.steps.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-2.0.3.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-2.0.3.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap-world-mill-en.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\jvectormap\jquery-jvectormap.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.concat.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mCustomScrollbar.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\malihu-custom-scrollbar-plugin-master\jquery.mousewheel.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\plyr\dist\plyr.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\plyr\dist\plyr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\plyr\dist\plyr.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\css\select2.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\css\select2.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\af.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ar.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\az.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\bg.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\bs.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ca.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\cs.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\da.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\de.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\dsb.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\el.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\en.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\es.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\et.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\eu.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\fa.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\fi.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\fr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\gl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\he.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\hi.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\hr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\hsb.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\hu.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\hy.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\id.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\is.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\it.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ja.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\km.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ko.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\lt.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\lv.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\mk.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ms.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\nb.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\nl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\pl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ps.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\pt-BR.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\pt.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ro.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\ru.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\sk.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\sl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\sr-Cyrl.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\sr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\sv.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\th.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\tk.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\tr.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\uk.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\vi.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\zh-CN.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\i18n\zh-TW.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\select2.full.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\select2.full.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\select2.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\select2\dist\js\select2.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\slick\slick.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\slick\slick.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\sweetalert2\sweet-alert.init.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\sweetalert2\sweetalert2.all.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\sweetalert2\sweetalert2.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\switchery\switchery.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\switchery\switchery.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\timedropper\timedropper.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\timedropper\timedropper.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\timedropper\timedropper.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\timedropper\timedropper.min.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot - Copy\plugins\wysihtml5-master\dist\wysihtml5-0.3.0.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>

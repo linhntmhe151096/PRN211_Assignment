@@ -1,0 +1,54 @@
+﻿
+
+ <link href="~/css/login.css" rel="stylesheet" />
+
+
+<br>
+ <form action="Logined">
+     <div class="container-fluid">
+        <div class="row bodi">
+            <div>
+                <button type="button" class="btn btn-primary buton-xanh">Login with Facebook</button>
+                <button type="button" class="btn btn-danger buton-do">Login with Google</button>
+                <h4>OR</h4>
+            </div>
+            <div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="email" name="email" value="@ViewData["email"]" class="form-control formm" id="exampleFormControlInput1" placeholder="Email address*">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="password" name="password" value="@ViewData["pass"]" class="form-control formm" id="exampleFormControlInput1" placeholder="Password*">
+                </div>
+            </div>
+            <div class="checkbox">
+                <input class="form-check-input" name="remember" type="checkbox" value="@ViewData["remember"]" id="remember">
+                <label class="form-check-label" for="remember">
+                    Remember me
+                </label>
+            </div>
+            <a href="#" class="aaa">Forgot Password</a><br>
+             
+        </div>
+
+         @if (ViewBag.Error is not null)
+                                {
+                                    <div style="margin-top: 20px;margin-top: 10px;margin-left: 430px;color:red;">
+                                        @ViewBag.Error
+                                    </div>
+                                }
+   
+        <div style="margin-left: 430px; margin-top: 10px;">
+            <button type="submit" class="btn btn-primary">Login</button><br><br><br>
+            <hr width="652px">
+        </div>
+        
+                                   
+                              
+        <h5 class="text" style="text-align: center; color: #aeaeae;">Don't have an account ? <a href="/SignUp/Register">Sign up</a></h5>
+    </div><br><br>
+
+ </form>
+ <br /><br /><br /><br /><br />
+ 
